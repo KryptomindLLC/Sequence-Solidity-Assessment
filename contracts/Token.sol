@@ -94,7 +94,7 @@ contract Token is IERC20, IMintableToken, IDividends {
   }
 
   // ----------------------------
-  // Mint / Burn
+  // Mint/Burn
   // ----------------------------
   function mint() external payable override {
     require(msg.value > 0, "No ETH");
